@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- CRM Tag: Media Beca -->
+    <record id="crm_tag_media_beca" model="crm.tag">
+        <field name="name">Media Beca</field>
+        <field name="color">10</field>
+    </record>
+
+    <!-- CRM Tag: Landing Page -->
+    <record id="crm_tag_landing" model="crm.tag">
+        <field name="name">Landing Page</field>
+        <field name="color">4</field>
+    </record>
+
+    <!-- UTM Source: Website Landing -->
+    <record id="utm_source_website_landing" model="utm.source">
+        <field name="name">Website Landing Tridium Vozia</field>
+    </record>
+</odoo>

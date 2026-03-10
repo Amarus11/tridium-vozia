@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ================================================================== -->
+    <!-- Override the default Odoo homepage with Tridium Vozia landing page -->
+    <!-- ================================================================== -->
+    <template id="homepage" inherit_id="website.homepage" name="Tridium Vozia Homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="oe_structure x_tva_page">
+
+                <!-- ====================================================== -->
+                <!-- HERO SECTION                                           -->
+                <!-- ====================================================== -->
+                <section class="x_tva_hero">
+                    <div class="row g-0 w-100">
+                        <!-- Left: Content -->
+                        <div class="col-lg-7 x_tva_hero_content x_tva_bg_primary">
+                            <div class="x_tva_hero_light_streak"/>
+
+                            <div class="x_tva_hero_tag">
+                                <span class="x_tva_tag_line"/>
+                                <span class="x_tva_tag_text">Aceleradora de Idiomas Global</span>
+                            </div>
+
+                            <h1>
+                                El idioma no tiene <span class="text-white-50">fronteras</span>,<br/>
+                                <span class="x_tva_text_accent x_tva_text_glow">tu carrera tampoco.</span>
+                            </h1>
+
+                            <p class="x_tva_hero_subtitle">
+                                Domina el idioma desde el primer día con una metodología
+                                <strong>75% práctica</strong> diseñada para el éxito en el mercado profesional global.
+                            </p>
+
+                            <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-4">
+                                <a href="#x_tva_becas" class="x_tva_hero_cta">
+                                    APLICAR A MEDIA BECA
+                                    <i class="fa fa-arrow-right"/>
+                                </a>
+                                <a href="#x_tva_metodologia" class="x_tva_hero_link">
+                                    <span class="x_tva_play_btn">
+                                        <i class="fa fa-play"/>
+                                    </span>
+                                    Ver Metodología
+                                </a>
+                            </div>
+
+                            <div class="x_tva_hero_stats">
+                                <div class="x_tva_stat_item">
+                                    <i class="fa fa-globe"/>
+                                    <div>
+                                        <div class="x_tva_stat_value">+5,000</div>
+                                        <div class="x_tva_stat_label">Alumnos</div>
+                                    </div>
+                                </div>
+                                <div class="x_tva_stat_item">
+                                    <i class="fa fa-trophy"/>
+                                    <div>
+                                        <div class="x_tva_stat_value">A1 – C2</div>
+                                        <div class="x_tva_stat_label">Niveles MCER</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Hero Image -->
+                        <div class="col-lg-5 x_tva_hero_image_wrap">
+                            <div class="x_tva_hero_image_overlay"/>
+                            <img src="/website_tridium_vozia/static/src/img/content/hero.svg"
+                                 alt="Equipo profesional global"
+                                 loading="lazy"/>
+
+                            <!-- Floating card (XL only) -->
+                            <div class="x_tva_hero_float_card">
+                                <div class="x_tva_glass_card">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <div style="width:2.5rem;height:2.5rem;background:#22C55E;border-radius:0.5rem;display:flex;align-items:center;justify-content:center;color:#0F2D52;">
+                                            <i class="fa fa-line-chart"/>
+                                        </div>
+                                        <span class="fw-bold small">Crecimiento Exponencial</span>
+                                    </div>
+                                    <p class="text-muted small mb-0">
+                                        92% de nuestros egresados reportan mejores oportunidades laborales en menos de 6 meses.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ====================================================== -->
+                <!-- METODOLOGÍA SECTION                                    -->
+                <!-- ====================================================== -->
+                <section class="x_tva_section" id="x_tva_metodologia">
+                    <div class="container">
+                        <div class="x_tva_section_header">
+                            <div class="x_tva_section_tag">Metodología de Alto Rendimiento</div>
+                            <h2>Cómo transformamos tu futuro</h2>
+                            <div class="x_tva_divider"/>
+                        </div>
+
+                        <div class="row g-4">
+                            <!-- Card 1: Inmersión Real -->
+                            <div class="col-md-4">
+                                <div class="x_tva_method_card h-100">
+                                    <div class="x_tva_method_icon">
+                                        <i class="fa fa-globe"/>
+                                    </div>
+                                    <h4>Inmersión Real</h4>
+                                    <p>
+                                        Clases 100% en vivo con profesores expertos. Nada de grabaciones estáticas — interacción humana desde el primer minuto.
+                                    </p>
+                                    <ul class="x_tva_check_list">
+                                        <li><i class="fa fa-check-circle"/> Podcasts interactivos</li>
+                                        <li><i class="fa fa-check-circle"/> Videos nativos de inmersión</li>
+                                        <li><i class="fa fa-check-circle"/> Audios de práctica diaria</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: Smart Planning -->
+                            <div class="col-md-4">
+                                <div class="x_tva_method_card h-100" style="box-shadow: 0 25px 50px -12px rgba(15,45,82,0.1);">
+                                    <div class="x_tva_method_icon">
+                                        <i class="fa fa-lightbulb-o"/>
+                                    </div>
+                                    <h4>Smart Planning</h4>
+                                    <p>
+                                        Contenido enfocado en tu área profesional. Aprendes lo que realmente necesitas para destacar en el mercado laboral global.
+                                    </p>
+                                    <ul class="x_tva_check_list">
+                                        <li><i class="fa fa-check-circle"/> Vocabulario de negocios</li>
+                                        <li><i class="fa fa-check-circle"/> Casos prácticos reales</li>
+                                        <li><i class="fa fa-check-circle"/> Ejercicios interactivos diarios</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Card 3: Estructura A1-C2 -->
+                            <div class="col-md-4">
+                                <div class="x_tva_method_card h-100">
+                                    <div class="x_tva_method_icon">
+                                        <i class="fa fa-line-chart"/>
+                                    </div>
+                                    <h4>Estructura A1 – C2</h4>
+                                    <p>
+                                        Ruta de aprendizaje clara y certificada bajo el Marco Común Europeo de Referencia para las Lenguas (MCER).
+                                    </p>
+                                    <ul class="x_tva_check_list">
+                                        <li><i class="fa fa-check-circle"/> 6 módulos progresivos</li>
+                                        <li><i class="fa fa-check-circle"/> Sesiones intensivas L/M/V</li>
+                                        <li><i class="fa fa-check-circle"/> Certificación por nivel</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Methodology detail: 75% Práctica -->
+                        <div class="row mt-5 pt-4">
+                            <div class="col-lg-8 mx-auto text-center">
+                                <div class="d-flex justify-content-center gap-3 flex-wrap mb-3">
+                                    <span class="badge rounded-pill fs-6 px-4 py-2"
+                                          style="background:#22C55E;color:#0F2D52;font-weight:700;">
+                                        75% Práctica
+                                    </span>
+                                    <span class="badge rounded-pill fs-6 px-4 py-2"
+                                          style="background:#0F2D52;color:#fff;font-weight:700;">
+                                        25% Teoría
+                                    </span>
+                                </div>
+                                <p class="text-muted">
+                                    Nuestra metodología prioriza la práctica real: conversaciones, presentaciones,
+                                    negociaciones y resolución de problemas en inglés desde el día uno.
+                                    La teoría complementa con gramática contextualizada y vocabulario estratégico.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ====================================================== -->
+                <!-- MEDIA BECA / CTA SECTION                               -->
+                <!-- ====================================================== -->
+                <section class="x_tva_beca_section" id="x_tva_becas">
+                    <!-- Background decorative shape -->
+                    <svg class="x_tva_beca_bg_shape" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M0 100 L100 0 L100 100 Z" fill="currentColor"/>
+                    </svg>
+
+                    <div class="container position-relative" style="z-index:2;">
+                        <div class="row g-5 align-items-center">
+                            <!-- Left: Info -->
+                            <div class="col-lg-6">
+                                <div class="x_tva_beca_badge">
+                                    <i class="fa fa-clock-o"/> OFERTA POR TIEMPO LIMITADO
+                                </div>
+
+                                <h2>
+                                    Media Beca Internacional
+                                    <span class="x_tva_text_accent" style="font-style:italic;"> 50% OFF</span>
+                                </h2>
+
+                                <p class="fs-5" style="color:rgba(255,255,255,0.7);">
+                                    No permitas que el presupuesto sea una barrera. Accede hoy mismo
+                                    a nuestras tasas congeladas y asegura tu lugar con un descuento del 50%.
+                                </p>
+
+                                <div class="row g-3 mb-4">
+                                    <div class="col-sm-6">
+                                        <div class="x_tva_beca_feature">
+                                            <i class="fa fa-snowflake-o"/>
+                                            <div>
+                                                <h5>Tasa Congelada</h5>
+                                                <p>Tu precio no subirá durante todo el curso.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="x_tva_beca_feature">
+                                            <i class="fa fa-check-circle"/>
+                                            <div>
+                                                <h5>Prioridad Global</h5>
+                                                <p>Acceso a red de contactos internacional.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="#x_tva_becas" class="x_tva_beca_cta_btn">
+                                    ¡Quiero mi 50% de descuento!
+                                </a>
+                            </div>
+
+                            <!-- Right: Application Form -->
+                            <div class="col-lg-6">
+                                <div class="x_tva_form_card">
+                                    <h4>Postula Ahora</h4>
+                                    <form action="/website_tridium_vozia/apply" method="POST">
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <div class="x_tva_form_group">
+                                            <label for="tva_name">Nombre Completo</label>
+                                            <input type="text" id="tva_name" name="name"
+                                                   placeholder="Ej: Juan Pérez" required="required"/>
+                                        </div>
+                                        <div class="x_tva_form_group">
+                                            <label for="tva_email">Email Corporativo / Personal</label>
+                                            <input type="email" id="tva_email" name="email"
+                                                   placeholder="email@ejemplo.com" required="required"/>
+                                        </div>
+                                        <div class="x_tva_form_group">
+                                            <label for="tva_phone">Teléfono / WhatsApp</label>
+                                            <input type="tel" id="tva_phone" name="phone"
+                                                   placeholder="+507 6000-0000"/>
+                                        </div>
+                                        <div class="x_tva_form_group">
+                                            <label for="tva_country">País de Residencia</label>
+                                            <select id="tva_country" name="country" required="required">
+                                                <option value="PA">Panamá</option>
+                                                <option value="CO">Colombia</option>
+                                                <option value="MX">México</option>
+                                                <option value="BR">Brasil</option>
+                                                <option value="US">Estados Unidos</option>
+                                                <option value="OTHER">Otros</option>
+                                            </select>
+                                        </div>
+                                        <div class="x_tva_form_group">
+                                            <label for="tva_level">Nivel de Interés</label>
+                                            <select id="tva_level" name="level">
+                                                <option value="A1">A1 — Foundations ($180 USD)</option>
+                                                <option value="A2">A2 — Elementary ($180 USD)</option>
+                                                <option value="B1">B1 — Intermediate ($250 USD)</option>
+                                                <option value="B2">B2 — Upper-Intermediate ($350 USD)</option>
+                                                <option value="C1">C1 — Advanced ($450 USD)</option>
+                                                <option value="C2">C2 — Mastery ($550 USD)</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="x_tva_form_submit">
+                                            Enviar Solicitud
+                                        </button>
+                                        <p class="x_tva_form_disclaimer">
+                                            Nos comunicaremos contigo en menos de 24 horas hábiles.
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ====================================================== -->
+                <!-- PLANES DE INVERSIÓN (PRECIOS)                          -->
+                <!-- ====================================================== -->
+                <section class="x_tva_pricing_section" id="x_tva_precios">
+                    <div class="container">
+                        <div class="x_tva_section_header">
+                            <h2>Planes de Inversión</h2>
+                            <p class="text-muted">Selecciona el nivel que mejor se adapte a tus metas actuales. Precios por módulo completo.</p>
+                        </div>
+
+                        <div class="row g-4 align-items-stretch">
+                            <!-- PLAN 1: A1 / A2 — Fundamentos -->
+                            <div class="col-md-4">
+                                <div class="x_tva_pricing_card">
+                                    <div>
+                                        <span class="x_tva_pricing_level_tag">Fundamentos</span>
+                                        <h4 class="x_tva_pricing_card_title">Nivel A1 / A2</h4>
+                                        <p class="x_tva_pricing_card_desc">
+                                            De cero a comunicación básica. Perfecto para principiantes.
+                                            Duración: 3 meses por nivel.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="x_tva_pricing_price">
+                                            $180 <small>USD / módulo</small>
+                                        </div>
+                                        <div class="x_tva_pricing_sub_price">
+                                            Con Media Beca: <strong>$90 USD</strong>
+                                        </div>
+                                    </div>
+                                    <ul class="x_tva_pricing_features">
+                                        <li><i class="fa fa-check"/> 3 sesiones semanales en vivo (L/M/V)</li>
+                                        <li><i class="fa fa-check"/> Material digital incluido</li>
+                                        <li><i class="fa fa-check"/> Acceso a plataforma 24/7</li>
+                                        <li><i class="fa fa-check"/> Ejercicios interactivos diarios</li>
+                                        <li><i class="fa fa-check"/> Podcasts y audios de inmersión</li>
+                                    </ul>
+                                    <a href="#x_tva_becas" class="x_tva_pricing_btn">Elegir Nivel</a>
+                                </div>
+                            </div>
+
+                            <!-- PLAN 2: B1 / B2 — Intermedio (DESTACADO) -->
+                            <div class="col-md-4">
+                                <div class="x_tva_pricing_card x_tva_pricing_card_highlight">
+                                    <div class="x_tva_pricing_popular_badge">Más Popular</div>
+                                    <div>
+                                        <span class="x_tva_pricing_level_tag">Intermedio</span>
+                                        <h4 class="x_tva_pricing_card_title">Nivel B1 / B2</h4>
+                                        <p class="x_tva_pricing_card_desc">
+                                            Fluidez profesional. Prepárate para el mercado laboral internacional.
+                                            Duración: 4 meses por nivel.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="x_tva_pricing_price">
+                                            $250–$350 <small>USD / módulo</small>
+                                        </div>
+                                        <div class="x_tva_pricing_sub_price">
+                                            Con Media Beca: desde <strong>$125 USD</strong>
+                                        </div>
+                                    </div>
+                                    <ul class="x_tva_pricing_features">
+                                        <li><i class="fa fa-check"/> Business Speaking intensivo</li>
+                                        <li><i class="fa fa-check"/> Preparación para entrevistas</li>
+                                        <li><i class="fa fa-check"/> Corrección personalizada</li>
+                                        <li><i class="fa fa-check"/> Videos nativos de inmersión</li>
+                                        <li><i class="fa fa-check"/> Casos prácticos reales</li>
+                                    </ul>
+                                    <a href="#x_tva_becas" class="x_tva_pricing_btn x_tva_pricing_btn_primary">Inscribirme Ahora</a>
+                                </div>
+                            </div>
+
+                            <!-- PLAN 3: C1 / C2 — Maestría -->
+                            <div class="col-md-4">
+                                <div class="x_tva_pricing_card">
+                                    <div>
+                                        <span class="x_tva_pricing_level_tag">Maestría</span>
+                                        <h4 class="x_tva_pricing_card_title">Nivel C1 / C2</h4>
+                                        <p class="x_tva_pricing_card_desc">
+                                            Dominio nativo profesional. Negociación compleja y redacción avanzada.
+                                            Duración: 5 meses por nivel.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="x_tva_pricing_price">
+                                            $450–$550 <small>USD / módulo</small>
+                                        </div>
+                                        <div class="x_tva_pricing_sub_price">
+                                            Con Media Beca: desde <strong>$225 USD</strong>
+                                        </div>
+                                    </div>
+                                    <ul class="x_tva_pricing_features">
+                                        <li><i class="fa fa-check"/> Redacción avanzada de reportes</li>
+                                        <li><i class="fa fa-check"/> Negociación compleja en inglés</li>
+                                        <li><i class="fa fa-check"/> Presentaciones ejecutivas</li>
+                                        <li><i class="fa fa-check"/> Certificación Elite</li>
+                                        <li><i class="fa fa-check"/> Mentoría personalizada</li>
+                                    </ul>
+                                    <a href="#x_tva_becas" class="x_tva_pricing_btn">Elegir Nivel</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Horarios info -->
+                        <div class="row mt-5">
+                            <div class="col-lg-10 mx-auto">
+                                <div class="p-4 rounded-3 text-center" style="background:#0F2D52;color:#fff;">
+                                    <div class="row g-3 align-items-center">
+                                        <div class="col-md-4">
+                                            <i class="fa fa-laptop fa-2x mb-2" style="color:#22C55E;"/>
+                                            <div class="fw-bold">Clases Virtuales</div>
+                                            <div class="small opacity-75">Lunes, Miércoles y Viernes</div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <i class="fa fa-book fa-2x mb-2" style="color:#22C55E;"/>
+                                            <div class="fw-bold">Práctica Autónoma</div>
+                                            <div class="small opacity-75">15 min ejercicios interactivos diarios</div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <i class="fa fa-home fa-2x mb-2" style="color:#22C55E;"/>
+                                            <div class="fw-bold">Presencial Panamá</div>
+                                            <div class="small opacity-75">Martes y Jueves ($15/hr + transporte)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ====================================================== -->
+                <!-- NIVELES CEFR (Ruta de Aprendizaje)                     -->
+                <!-- ====================================================== -->
+                <section class="x_tva_section" style="background:#fff;" id="x_tva_niveles">
+                    <div class="container">
+                        <div class="x_tva_section_header">
+                            <div class="x_tva_section_tag">Ruta de Aprendizaje</div>
+                            <h2>De Cero a Nivel Experto</h2>
+                            <div class="x_tva_divider"/>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="text-center p-3 rounded-3" style="background:#F8FAFC;border:1px solid #e2e8f0;">
+                                    <div class="fw-bold fs-4" style="color:#22C55E;">A1</div>
+                                    <div class="fw-bold small">Foundations</div>
+                                    <div class="text-muted" style="font-size:0.75rem;">3 meses · $180</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="text-center p-3 rounded-3" style="background:#F8FAFC;border:1px solid #e2e8f0;">
+                                    <div class="fw-bold fs-4" style="color:#22C55E;">A2</div>
+                                    <div class="fw-bold small">Elementary</div>
+                                    <div class="text-muted" style="font-size:0.75rem;">3 meses · $180</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="text-center p-3 rounded-3" style="background:#F8FAFC;border:1px solid #e2e8f0;">
+                                    <div class="fw-bold fs-4" style="color:#22C55E;">B1</div>
+                                    <div class="fw-bold small">Intermediate</div>
+                                    <div class="text-muted" style="font-size:0.75rem;">4 meses · $250</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="text-center p-3 rounded-3" style="background:#0F2D52;border:1px solid #0F2D52;color:#fff;">
+                                    <div class="fw-bold fs-4" style="color:#22C55E;">B2</div>
+                                    <div class="fw-bold small">Upper-Int.</div>
+                                    <div style="font-size:0.75rem;opacity:0.7;">4 meses · $350</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="text-center p-3 rounded-3" style="background:#F8FAFC;border:1px solid #e2e8f0;">
+                                    <div class="fw-bold fs-4" style="color:#22C55E;">C1</div>
+                                    <div class="fw-bold small">Advanced</div>
+                                    <div class="text-muted" style="font-size:0.75rem;">5 meses · $450</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="text-center p-3 rounded-3" style="background:#F8FAFC;border:1px solid #e2e8f0;">
+                                    <div class="fw-bold fs-4" style="color:#22C55E;">C2</div>
+                                    <div class="fw-bold small">Mastery</div>
+                                    <div class="text-muted" style="font-size:0.75rem;">5 meses · $550</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ====================================================== -->
+                <!-- EXCLUSIVO PANAMÁ SECTION                               -->
+                <!-- ====================================================== -->
+                <section class="x_tva_panama_section" id="x_tva_panama">
+                    <div class="container">
+                        <div class="x_tva_panama_card">
+                            <div class="x_tva_panama_circle_deco"/>
+
+                            <div class="row g-5 align-items-center">
+                                <!-- Left: Info -->
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center gap-3 mb-4">
+                                        <i class="fa fa-map-marker fa-2x" style="color:#0F2D52;"/>
+                                        <h3 class="mb-0">Exclusivo en Panamá</h3>
+                                    </div>
+
+                                    <p>
+                                        Llevamos la academia a la comodidad de tu hogar. Disfruta de nuestras clases
+                                        presenciales <strong style="color:#0F2D52;font-style:italic;">In-Home</strong>
+                                        los días <strong>Martes y Jueves</strong> en Ciudad de Panamá.
+                                    </p>
+
+                                    <p class="mb-4" style="color:#64748b;font-size:0.9375rem;">
+                                        <i class="fa fa-info-circle" style="color:#22C55E;"/> Costo: $15 USD/hora + transporte.
+                                        Ideal para quienes buscan atención personalizada presencial.
+                                    </p>
+
+                                    <div class="mb-4">
+                                        <h6 class="text-uppercase text-muted fw-bold" style="letter-spacing:0.15em;font-size:0.75rem;">
+                                            Métodos de Pago Locales
+                                        </h6>
+                                        <div class="x_tva_payment_methods mt-3">
+                                            <div class="x_tva_payment_badge">
+                                                <i class="fa fa-university" style="color:#3b82f6;"/>
+                                                <span>Banco General</span>
+                                            </div>
+                                            <div class="x_tva_payment_badge">
+                                                <div class="x_tva_yappy_icon">Y</div>
+                                                <span>Yappy</span>
+                                            </div>
+                                            <div class="x_tva_payment_badge">
+                                                <i class="fa fa-credit-card" style="color:#94a3b8;"/>
+                                                <span>Tarjetas locales</span>
+                                            </div>
+                                            <div class="x_tva_payment_badge">
+                                                <i class="fa fa-qrcode" style="color:#10b981;"/>
+                                                <span>Cuanto.app</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right: Panama Image -->
+                                <div class="col-lg-6">
+                                    <div class="x_tva_panama_image_wrap">
+                                        <img src="/website_tridium_vozia/static/src/img/content/panama.svg"
+                                             alt="Clases presenciales en Panamá"
+                                             loading="lazy"
+                                             class="img-fluid"/>
+                                        <div class="x_tva_panama_image_bg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ====================================================== -->
+                <!-- FINAL CTA — Botón grande antes del footer               -->
+                <!-- ====================================================== -->
+                <section class="x_tva_bg_primary text-white text-center" style="padding:5rem 0;">
+                    <div class="container">
+                        <h2 class="mb-3" style="font-size:2.25rem;">¿Listo para dominar el inglés?</h2>
+                        <p class="mb-4 opacity-75 fs-5">
+                            Únete a más de 5,000 alumnos que ya están transformando su carrera profesional.
+                        </p>
+                        <a href="#x_tva_becas" class="x_tva_hero_cta" style="display:inline-flex;">
+                            APLICAR A MEDIA BECA AHORA
+                            <i class="fa fa-arrow-right"/>
+                        </a>
+                    </div>
+                </section>
+
+            </div><!-- /wrap -->
+        </xpath>
+    </template>
+
+    <!-- ================================================================== -->
+    <!-- Thank-you page after form submission                               -->
+    <!-- ================================================================== -->
+    <template id="apply_thanks" name="Tridium Vozia — Solicitud Enviada">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Solicitud Enviada</t>
+            <div id="wrap" class="oe_structure x_tva_page">
+                <section class="x_tva_success_section">
+                    <div class="container">
+                        <div class="x_tva_success_icon">
+                            <i class="fa fa-check"/>
+                        </div>
+                        <h2 style="color:#0F2D52;margin-bottom:1rem;">¡Solicitud Enviada!</h2>
+                        <p class="text-muted fs-5 mb-4">
+                            Gracias por tu interés en Tridium Vozia Academy.<br/>
+                            Nuestro equipo se comunicará contigo en menos de <strong>24 horas hábiles</strong>.
+                        </p>
+                        <a href="/" class="x_tva_hero_cta" style="display:inline-flex;">
+                            Volver al Inicio <i class="fa fa-arrow-right"/>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+</odoo>

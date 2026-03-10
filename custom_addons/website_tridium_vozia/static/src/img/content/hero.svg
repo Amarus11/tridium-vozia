@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F2D52;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a4a7a;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <!-- Grid pattern -->
+  <g opacity="0.05" stroke="#fff" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="0" y1="700" x2="1200" y2="700"/>
+    <line x1="200" y1="0" x2="200" y2="800"/>
+    <line x1="400" y1="0" x2="400" y2="800"/>
+    <line x1="600" y1="0" x2="600" y2="800"/>
+    <line x1="800" y1="0" x2="800" y2="800"/>
+    <line x1="1000" y1="0" x2="1000" y2="800"/>
+  </g>
+  <!-- People silhouettes (abstract) -->
+  <g opacity="0.15">
+    <circle cx="400" cy="320" r="35" fill="#fff"/>
+    <rect x="370" y="360" width="60" height="80" rx="10" fill="#fff"/>
+    <circle cx="550" cy="300" r="40" fill="#fff"/>
+    <rect x="515" y="345" width="70" height="90" rx="10" fill="#fff"/>
+    <circle cx="700" cy="330" r="32" fill="#fff"/>
+    <rect x="672" y="367" width="56" height="75" rx="10" fill="#fff"/>
+    <circle cx="830" cy="310" r="38" fill="#fff"/>
+    <rect x="796" y="353" width="68" height="85" rx="10" fill="#fff"/>
+  </g>
+  <!-- Accent elements -->
+  <circle cx="200" cy="200" r="80" fill="#22C55E" opacity="0.08"/>
+  <circle cx="900" cy="600" r="120" fill="#22C55E" opacity="0.06"/>
+  <!-- Text placeholder -->
+  <text x="600" y="680" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="24" fill="rgba(255,255,255,0.25)">HERO IMAGE — Replace with real photo</text>
+</svg>

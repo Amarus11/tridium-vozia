@@ -1,0 +1,17 @@
+// =============================================================================
+// Tridium Vozia Academy — Primary Variables (Odoo 19)
+// =============================================================================
+// These variables integrate with Odoo's color system and are loaded via
+// web._assets_primary_variables. They define the brand palette used across
+// the entire website.
+
+// Brand palette
+$o-color-1: #0F2D52;  // Primary — deep navy
+$o-color-2: #22C55E;  // Accent  — vibrant green
+$o-color-3: #F8FAFC;  // Background light
+$o-color-4: #FFFFFF;  // White
+$o-color-5: #334155;  // Text dark
+
+// Typography
+$o-theme-font: 'Inter', sans-serif;
+$o-theme-headings-font: 'Montserrat', sans-serif;
