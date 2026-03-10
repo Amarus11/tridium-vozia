@@ -3,17 +3,14 @@
 // =============================================================================
 // All custom classes are prefixed with x_tva_ to avoid collisions with Odoo
 // and Bootstrap default classes.
+// Google Fonts are loaded via a <link> tag in the QWeb template head.
 
 // ---------------------------------------------------------------------------
-// Google Fonts Import
-// ---------------------------------------------------------------------------
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap');
-
-// ---------------------------------------------------------------------------
-// Variables (local — mirrors primary_variables for use in this file)
+// Variables (local)
 // ---------------------------------------------------------------------------
 $tva-primary:    #0F2D52;
 $tva-accent:     #22C55E;
+$tva-accent-l:   #3bdf6e; // manually lightened accent
 $tva-bg-light:   #F8FAFC;
 $tva-text-dark:  #334155;
 $tva-white:      #FFFFFF;
@@ -64,7 +61,10 @@ $tva-white:      #FFFFFF;
 
 .x_tva_hero_light_streak {
     position: absolute;
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: linear-gradient(45deg, transparent 45%, rgba($tva-accent, 0.08) 50%, transparent 55%);
     background-size: 200% 200%;
     pointer-events: none;
@@ -150,7 +150,7 @@ $tva-white:      #FFFFFF;
         transform: translateX(4px);
         color: $tva-primary;
         text-decoration: none;
-        background: lighten($tva-accent, 5%);
+        background: $tva-accent-l;
     }
 
     i {
@@ -241,7 +241,10 @@ $tva-white:      #FFFFFF;
 
     img {
         position: absolute;
-        inset: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -258,7 +261,10 @@ $tva-white:      #FFFFFF;
 
 .x_tva_hero_image_overlay {
     position: absolute;
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: linear-gradient(to right, $tva-primary, transparent, transparent);
     z-index: 1;
     display: none;
@@ -725,8 +731,8 @@ $tva-white:      #FFFFFF;
     box-shadow: 0 10px 25px -5px rgba($tva-accent, 0.3);
 
     &:hover {
-        background: lighten($tva-accent, 5%);
-        border-color: lighten($tva-accent, 5%);
+        background: $tva-accent-l;
+        border-color: $tva-accent-l;
         color: $tva-primary;
     }
 }
@@ -824,7 +830,10 @@ $tva-white:      #FFFFFF;
 
     .x_tva_panama_image_bg {
         position: absolute;
-        inset: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
         background: rgba($tva-primary, 0.15);
         border-radius: 1.5rem;
         transform: rotate(-3deg);

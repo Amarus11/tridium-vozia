@@ -2,11 +2,22 @@
 <odoo>
 
     <!-- ================================================================== -->
+    <!-- Inject Google Fonts into website <head>                            -->
+    <!-- ================================================================== -->
+    <template id="google_fonts_head" inherit_id="website.layout" name="Tridium Vozia Google Fonts">
+        <xpath expr="//head" position="inside">
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Montserrat:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+        </xpath>
+    </template>
+
+    <!-- ================================================================== -->
     <!-- Override the default Odoo homepage with Tridium Vozia landing page -->
     <!-- ================================================================== -->
     <template id="homepage" inherit_id="website.homepage" name="Tridium Vozia Homepage">
         <xpath expr="//div[@id='wrap']" position="replace">
-            <div id="wrap" class="oe_structure x_tva_page">
+            <div id="wrap" class="x_tva_page">
 
                 <!-- ====================================================== -->
                 <!-- HERO SECTION                                           -->
